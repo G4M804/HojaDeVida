@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head><meta>
+<title>Formulario</title>
+
+<style >
+
+form {
+  background: #AAEAEA;
+  border: 1px solid #057171;
+  margin-top: 1rem;
+  max-width: 500px;
+  padding: 1em;
+}
+form input {
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #057171;
+  margin: auto;
+}
+form button {
+  background: white;
+  padding: 0.7em;
+  border: 1px solid #057171;
+}
+form button:hover {
+  background: #99A3A3;
+}
+
+input {
+  width: 480px;
+  padding: 0.7em;
+  margin: auto;
+
+}
+input:focus {
+  outline: 1px solid white;
+}
+
+  label {
+  	text-align: center;
+    display: block;
+    padding: 0.5em 1.5em 0.5em 0.5em;
+    float: center;
+    width: 100px;
+    margin: auto;
+  }
+
+  button {
+    float: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  textarea {
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #057171;
+  margin: auto;
+  width: 495px;
+}
+}
+</style>
+</head>
+<body>
+
+	<form id="envioForm" name="formulario" method="post" action="https://gemetech.co/mail/mail.php">
+<label>Nombre:</label>
+<input type="text" name="nombre" value="">
+<label>Destinatario:</label>
+<input type="text" name="destinatario" value="">
+<label>Asunto:</label>
+<input type="text" name="asunto" value="">
+<label>Mensaje</label>
+<textarea rows="6" cols="40" name="mensaje" form="envioForm"></textarea>
+<button>Enviar correo</button> 
+
+</form>
+
+</body>
+</html>
